@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head_title %}Об авторе проекта{% endblock %}
+{% block title %}<h1 class="text-center">Привет, я автор</h1>{% endblock %}
+{% block content %}
+  <p class="text-center">Меня зовут Дарья и это мой проект для Яндекс Практикума. Со временем он станет еще лучше и красивее, я в этом уверена.</p>
+  <p><a href="https://github.com/DariaEaly">Можете оценить мой аккаунт в Github</a></p>
+  <p class="text-center">В свободное от программирования время я успокаиваюсь вышивкой, поэтому держите ежика:</p>
+  <img src="{% static 'img/hedgehog.jpeg' %}" width="50%" class="rounded mx-auto d-block" alt="ежик">
+{% endblock %} 
