@@ -10,9 +10,7 @@
         <div class="card-body">
           {% include 'includes/form_error.html' %} 
           <form method="post"
-            {% if "../auth/login.html" %}
-              action="{% url 'users:login' %}"
-            {% endif %}>
+              action="{% url 'users:login' %}">
           {% csrf_token %}
           {% for field in form %}
             {% include 'includes/form_field.html' %} 

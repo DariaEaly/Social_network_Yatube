@@ -19,8 +19,10 @@
     {% include 'includes/header.html' %}
     <main>
       <div class="container py-5">
-        {% block title %}
-        {% endblock %}
+        <h1>
+          {% block title %}
+          {% endblock %}
+        </h1>
         {% block content %}
           Контент не подвезли!
         {% endblock %}

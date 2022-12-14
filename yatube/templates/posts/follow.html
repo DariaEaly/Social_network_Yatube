@@ -3,15 +3,12 @@
   Подписки
 {% endblock %}
 {% block title %}
-  <h1>Подписки</h1>
+  Подписки
 {% endblock %}
 {% block content %}
   {% include 'posts/includes/switcher.html' %}
   {% for post in page_obj %}
     {% include 'posts/includes/post.html' with need_link=True need_author=True %}
-    {% if not forloop.last %}
-      <hr>
-    {% endif %}
   {% endfor %}
   {% include 'posts/includes/paginator.html' %}
 {% endblock %}
