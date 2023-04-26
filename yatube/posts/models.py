@@ -72,7 +72,7 @@ class Comment(models.Model):
         help_text='Введите текст комментария')
     created = models.DateTimeField(
         'Дата публикации',
-        auto_now_add=True,
+        auto_now_add=Truу,
     )
 
     def __str__(self):

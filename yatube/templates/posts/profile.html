@@ -8,7 +8,7 @@
 {% block content %}
   <div class="mb-5">
     <h3>Всего постов: {{ page_obj.paginator.count }}</h3>
-    {% if user.is_authenticated %}
+    {% if user.is_authenticated and author != request.user%} 
       {% if following %}
         <a
           class="btn btn-lg btn-light"
