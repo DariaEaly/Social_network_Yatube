@@ -1,5 +1,5 @@
 
-# ![Logo](yatube\static\img\fav\favicon-32x32.png) yatube_project
+# yatube_project
 
 Социальная сеть блогеров
 
